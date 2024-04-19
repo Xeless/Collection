@@ -139,19 +139,19 @@ padding: 10%;
 @media screen and (max-width: 767px) {
 
     body {
+
+       main {
         flex-direction: column !important;
         display: block;
+        margin-left: 5%;
+      
 
         .card-container{
 
             margin-bottom: 90%;
             .card{
-
-
-
-
-
-            }
+}
         }
       } 
+    }
 }
