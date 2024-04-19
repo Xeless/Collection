@@ -41,7 +41,7 @@ body {
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     cursor: pointer;
-    margin-bottom: 70%;
+    margin-bottom: 80%;
 
     &:hover {
       filter: brightness(0.7);
@@ -90,6 +90,9 @@ body {
         &.drame {
           background: #9932cc;
         }
+        &.fiction {
+            background: rgba(0, 255, 0, 1);
+          }
       }
       .acteurbadge {
         position: absolute;

@@ -74,6 +74,20 @@ document.addEventListener("DOMContentLoaded", function () {
           "https://fr.web.img2.acsta.net/pictures/23/05/11/10/00/1986933.jpg",
         genre: ["Aventure", "Action", "Animation"],
       },
+      {
+        name: "Hunter x Hunter",
+        auteur: "Yoshihiro Togashi",
+        picture:
+          "https://media.s-bol.com/x2GVE9zAmRlz/550x824.jpg",
+        genre: ["Aventure", "Action", "Animation"],
+      },
+      {
+        name: "Rick & Morty",
+        auteur: "Justin Roiland",
+        picture:
+          "https://m.media-amazon.com/images/I/71ELRg6+MDL.jpg",
+        genre: ["Aventure", "Fiction", "Animation"],
+      },
   ];
 
   collections.forEach(function (collection) {
