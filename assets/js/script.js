@@ -90,10 +90,21 @@ document.addEventListener("DOMContentLoaded", function () {
       },
   ];
 
+ const myheader = document.createElement("header")
+ const navbar = document.createElement("nav")
+ document.body.appendChild(myheader)
+ myheader.appendChild(navbar)
+
+
+ const mainParent = document.createElement("main")
+ document.body.appendChild(mainParent);
+
   collections.forEach(function (collection) {
+   
     const cardContainer = document.createElement("div");
     cardContainer.classList.add("card-container");
-    document.body.appendChild(cardContainer);
+   
+    mainParent.appendChild(cardContainer)
 
     const card = createCard(collection);
     cardContainer.appendChild(card);
@@ -103,6 +114,9 @@ document.addEventListener("DOMContentLoaded", function () {
     title.classList.add("title");
     cardContainer.appendChild(title);
   });
+  const footer = document.createElement("footer")
+document.body.appendChild(footer)
+
 });
 
 function createCard(collection) {
@@ -122,6 +136,5 @@ function createCard(collection) {
     badge.classList.add(genre.toLowerCase());
     card.appendChild(badge);
   });
-
   return card;
 }

@@ -19,17 +19,34 @@ h1 {
 }
 
 body {
-  display: grid;
-  justify-content: center;
   font-family: "Roboto", sans-serif;
-  grid-template-columns: 25% 25% 25% 25%;
   background-color: #141414;
   background-image: linear-gradient(135deg, #141414 0%, #2c2c2c 100%);
   width: 100%;
-  gap: 5px;
-  padding: 10%;
 }
-body .card-container {
+body header {
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  z-index: 100;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+body main {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  justify-content: center;
+  padding: 10%;
+  width: 100%;
+}
+body main .card-container {
   position: relative;
   width: 90%;
   height: 30vh;
@@ -38,21 +55,21 @@ body .card-container {
   cursor: pointer;
   margin-bottom: 80%;
 }
-body .card-container:hover {
+body main .card-container:hover {
   filter: brightness(0.7);
   transform: scale(1.02);
   transition: ease 0.6s;
 }
-body .card-container .title {
+body main .card-container .title {
   margin-top: 4%;
 }
-body .card-container .card {
+body main .card-container .card {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 18px;
 }
-body .card-container .card .badge {
+body main .card-container .card .badge {
   display: inline-block;
   padding: 0.3em 0.5em;
   margin-right: 0.5em;
@@ -63,28 +80,28 @@ body .card-container .card .badge {
   margin-bottom: 3%;
   margin-left: 2%;
 }
-body .card-container .card .badge.action {
+body main .card-container .card .badge.action {
   background: #ff5733;
 }
-body .card-container .card .badge.combat {
+body main .card-container .card .badge.combat {
   background: #1e90ff;
 }
-body .card-container .card .badge.rpg {
+body main .card-container .card .badge.rpg {
   background: #4caf50;
 }
-body .card-container .card .badge.animation {
+body main .card-container .card .badge.animation {
   background: #8b0000;
 }
-body .card-container .card .badge.aventure {
+body main .card-container .card .badge.aventure {
   background: #ffd700;
 }
-body .card-container .card .badge.drame {
+body main .card-container .card .badge.drame {
   background: #9932cc;
 }
-body .card-container .card .badge.fiction {
+body main .card-container .card .badge.fiction {
   background: rgb(0, 255, 0);
 }
-body .card-container .card .acteurbadge {
+body main .card-container .card .acteurbadge {
   position: absolute;
   display: inline-block;
   background: #0099cc;
