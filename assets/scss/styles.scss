@@ -19,6 +19,29 @@ h1 {
   -webkit-text-stroke: 1px darkgray;
 }
 
+button {
+  display: flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: #3D3D3D;
+  background: #fff;
+  border: none;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+  .filter-button {
+
+  }
+}
+
+
+
+
+
+
+
 
 
 body {
@@ -40,6 +63,8 @@ header{
   text-align: center;
   justify-content: center;
   color: white;
+
+
   nav{
 
   }
@@ -63,7 +88,7 @@ padding: 10%;
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     cursor: pointer;
-    margin-bottom: 80%;
+    margin-bottom: 85%;
 
     &:hover {
       filter: brightness(0.7);
@@ -107,13 +132,19 @@ padding: 10%;
           background: #8b0000;
         }
         &.aventure {
-          background: #ffd700;
+          background: rgb(34, 139, 34);
         }
         &.drame {
           background: #9932cc;
         }
         &.fiction {
             background: rgba(0, 255, 0, 1);
+          }
+          &.comédie{
+            background: rgba(255, 215, 0);
+          }
+          &.police {
+            background: rgba(128, 128, 128) ;
           }
       }
       .acteurbadge {
@@ -125,7 +156,7 @@ padding: 10%;
         font-size: 0.9em;
         font-weight: bold;
         border-radius: 18px;
-        margin-top: 1%;
+        margin-top: 2%;
         margin-left: 2%;
       }
     }
