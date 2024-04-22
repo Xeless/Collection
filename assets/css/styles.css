@@ -24,14 +24,16 @@ button {
   align-items: center;
   padding: 6px 14px;
   border-radius: 6px;
-  color: #3D3D3D;
+  color: #3d3d3d;
   background: #fff;
   border: none;
   box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   display: inline-block;
   margin-right: 10px;
+  margin-top: 10%;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #141414;
@@ -73,15 +75,27 @@ body main .card-container:hover {
   filter: brightness(0.7);
   transform: scale(1.02);
   transition: ease 0.6s;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2), 0 0 80px rgba(0, 0, 0, 0.1); /* Augmentation de l'ombre au survol */
 }
 body main .card-container .title {
   margin-top: 4%;
 }
 body main .card-container .card {
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 18px;
+  overflow: hidden;
+}
+body main .card-container .card::after {
+  content: "";
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 80%);
 }
 body main .card-container .card .badge {
   display: inline-block;

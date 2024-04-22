@@ -24,25 +24,15 @@ button {
   align-items: center;
   padding: 6px 14px;
   border-radius: 6px;
-  color: #3D3D3D;
+  color: #3d3d3d;
   background: #fff;
   border: none;
   box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   display: inline-block;
   margin-right: 10px;
-  .filter-button {
-
-  }
+  margin-top: 10%;
 }
-
-
-
-
-
-
-
-
 
 body {
   font-family: "Roboto", sans-serif;
@@ -50,139 +40,145 @@ body {
   background-image: linear-gradient(135deg, #141414 0%, #2c2c2c 100%);
   width: 100%;
 
-header{
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  z-index: 100;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  justify-content: center;
-  color: white;
+  header {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    z-index: 100;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    color: white;
 
-
-  nav{
-
+    nav {
+    }
   }
-}
 
-main {
+  main {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    justify-content: center;
+    padding: 10%;
+    width: 100%;
 
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: auto;
-  justify-content: center;
-padding: 10%;
-  width: 100%;
-  
-  .card-container {
-    position: relative;
-    width: 90%;
-    height: 30vh;
-    border-radius: 18px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    cursor: pointer;
-    margin-bottom: 85%;
-
-    &:hover {
-      filter: brightness(0.7);
-      transform: scale(1.02);
-      transition: ease 0.6s;
-    }
-
-    .title{
-        margin-top: 4%;
-    }
-
-    .card {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
+    .card-container {
+      position: relative;
+      width: 90%;
+      height: 30vh;
       border-radius: 18px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      cursor: pointer;
+      margin-bottom: 85%;
 
-     
-      .badge {
-        display: inline-block;
-        padding: 0.3em 0.5em;
-        margin-right: 0.5em;
-        font-size: 0.9em;
-        font-weight: bold;
+      &:hover {
+        filter: brightness(0.7);
+        transform: scale(1.02);
+        transition: ease 0.6s;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.2), 0 0 80px rgba(0, 0, 0, 0.1); /* Augmentation de l'ombre au survol */
+      }
+
+      .title {
+        margin-top: 4%;
+      }
+
+      .card {
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         border-radius: 18px;
-        margin-top: 370px;
-        margin-bottom: 3%;
-        margin-left: 2%;
+        overflow: hidden;
 
-        &.action {
-          background: #ff5733;
+        &::after {
+          content: "";
+          position: absolute;
+          top: -5%;
+          left: -5%;
+          width: 110%;
+          height: 110%;
+          background: radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(255, 255, 255, 0) 80%
+          );
         }
 
-        &.combat {
-          background: #1e90ff;
-        }
-        &.rpg {
-          background: #4caf50;
-        }
-        &.animation {
-          background: #8b0000;
-        }
-        &.aventure {
-          background: rgb(34, 139, 34);
-        }
-        &.drame {
-          background: #9932cc;
-        }
-        &.fiction {
+        .badge {
+          display: inline-block;
+          padding: 0.3em 0.5em;
+          margin-right: 0.5em;
+          font-size: 0.9em;
+          font-weight: bold;
+          border-radius: 18px;
+          margin-top: 370px;
+          margin-bottom: 3%;
+          margin-left: 2%;
+
+          &.action {
+            background: #ff5733;
+          }
+
+          &.combat {
+            background: #1e90ff;
+          }
+          &.rpg {
+            background: #4caf50;
+          }
+          &.animation {
+            background: #8b0000;
+          }
+          &.aventure {
+            background: rgb(34, 139, 34);
+          }
+          &.drame {
+            background: #9932cc;
+          }
+          &.fiction {
             background: rgba(0, 255, 0, 1);
           }
-          &.comédie{
+          &.comédie {
             background: rgba(255, 215, 0);
           }
           &.police {
-            background: rgba(128, 128, 128) ;
+            background: rgba(128, 128, 128);
           }
+        }
+        .acteurbadge {
+          position: absolute;
+          display: inline-block;
+          background: #0099cc;
+          padding: 0.3em 0.5em;
+          margin-right: 0.5em;
+          font-size: 0.9em;
+          font-weight: bold;
+          border-radius: 18px;
+          margin-top: 2%;
+          margin-left: 2%;
+        }
       }
-      .acteurbadge {
-        position: absolute;
-        display: inline-block;
-        background: #0099cc;
-        padding: 0.3em 0.5em;
-        margin-right: 0.5em;
-        font-size: 0.9em;
-        font-weight: bold;
-        border-radius: 18px;
-        margin-top: 2%;
-        margin-left: 2%;
-      }
-    }
     }
   }
 }
 
-
-
-
 @media screen and (max-width: 767px) {
+  body {
+    main {
+      flex-direction: column !important;
+      display: block;
+      margin-left: 5%;
 
-    body {
-
-       main {
-        flex-direction: column !important;
-        display: block;
-        margin-left: 5%;
-      
-
-        .card-container{
-
-            margin-bottom: 90%;
-            .card{
-}
+      .card-container {
+        margin-bottom: 90%;
+        .card {
         }
-      } 
+      }
     }
+  }
 }

@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Frieren: Beyond Journey's End",
       auteur: "Kanehito Yamada",
       picture:
-        "https://m.media-amazon.com/images/M/MV5BMjVjZGU5ZTktYTZiNC00N2Q1LThiZjMtMDVmZDljN2I3ZWIwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX190_CR0,2,190,281_.jpg 190w, https://m.media-amazon.com/images/M/MV5BMjVjZGU5ZTktYTZiNC00N2Q1LThiZjMtMDVmZDljN2I3ZWIwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX285_CR0,3,285,422_.jpg 285w, https://m.media-amazon.com/images/M/MV5BMjVjZGU5ZTktYTZiNC00N2Q1LThiZjMtMDVmZDljN2I3ZWIwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,4,380,562_.jpg 380w",
+        "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
       genre: ["Aventure", "Drame", "Combat"],
     },
 
