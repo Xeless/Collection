@@ -23,6 +23,7 @@ Ceci est un projet réalisé en solo dans le cadre de notre apprentissage chez B
 ### Built with
 
 - SCSS
+- JS
 - Flexbox
 - Mobile-first workflow
 
