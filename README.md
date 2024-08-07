@@ -18,7 +18,7 @@ Ceci est un projet réalisé en solo dans le cadre de notre apprentissage chez B
 ### Screenshot
 <img src="https://image.noelshack.com/fichiers/2024/32/3/1723017869-capture-d-cran-7-8-2024-1413-xeless-github-io.jpeg"></img>
 
-### ✨ [Demo](https://xeless.github.io/random-quote-using-async-await/)
+### ✨ [Demo](https://xeless.github.io/Collection/)
 
 ### Built with
 
